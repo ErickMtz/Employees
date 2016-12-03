@@ -15,4 +15,4 @@ var employeeSchema = new Schema({
 	salary: Number
 });
 
-module.exports = mongoose.model('Employee', productSchema);
+module.exports = mongoose.model('Employee', employeeSchema);
