@@ -1,0 +1,11 @@
+{
+  "name": "practica2",
+  "version": "1.0.0",
+  "description": "Webservice para la administración de empleados",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ErickMtz <erick.e.mtz.g@gmail.com>",
+  "license": "MIT"
+}
