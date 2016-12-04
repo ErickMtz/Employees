@@ -7,6 +7,17 @@ var employeesController = require('./controllers/employeesController.js');
 var app = express();
 var employees = express.Router();
 
+/// Connect to database
+mongoose.connect('mongodb://localhost/employees');
+
+var db = mongoose.connection;
+
+db.on('error', console.log.bind(console, 'connection error:'));
+
+db.once('open', function() {
+  console.log('Connection Success');
+});
+
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(methodOverride());
