@@ -35,6 +35,7 @@ app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/c
 app.use('/javascripts', express.static(__dirname + '/node_modules/bootstrap/dist/js/'));
 app.use('/views', express.static(__dirname + '/views'));
 
+
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');

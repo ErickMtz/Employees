@@ -54,6 +54,7 @@
 				salary: $scope.salary
 			}
 			if(newEmployee.employee_id){
+				
 				$http.post('/api/employees',newEmployee)
 				.then(function(response){
 					$scope.employees = response.data;
