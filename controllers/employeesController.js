@@ -15,13 +15,16 @@ exports.findAllEmployees= function(req, res) {
 exports.findById = function(req, res) {
 	
 	var id = req.params.id;
-	Employee.findOne({employee_id: id}, function(error, found){
+
+	
+	Employee.find({employee_id: id}, function(error, found){
 		if(error){
 			res.send(500, error.message);
 		}
 
 		res.status(200).jsonp(found);
 	});
+	
 };
 
 exports.addEmployee = function(req, res) {
@@ -32,7 +35,7 @@ exports.addEmployee = function(req, res) {
 		last_name: req.body.last_name,
 		rfc: req.body.rfc,
 		gender: req.body.gender,
-		birth_date: req.body.birth_date,
+		birthday: req.body.birthday,
 		phone_number: req.body.phone_number,
 		email: req.body.email,
 		employment: req.body.employment,
@@ -57,7 +60,7 @@ exports.updateEmployee = function(req, res) {
 															last_name: req.body.last_name,
 															rfc: req.body.rfc,
 															gender: req.body.gender,
-															birth_date: req.body.birth_date,
+															birthday: req.body.birthday,
 															phone_number: req.body.phone_number,
 															email: req.body.email,
 															employment: req.body.employment,

@@ -7,7 +7,7 @@ var employeeSchema = new Schema({
 	last_name: String,
 	rfc: String,
 	gender: String,
-	birth_date: Date,
+	birthday: Date,
 	phone_number: Number,
 	email: String,
 	employment: String,

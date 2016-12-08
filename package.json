@@ -10,7 +10,10 @@
   "author": "ErickMtz <erick.e.mtz.g@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "angular": "^1.6.0-rc.2",
     "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "ejs": "^2.5.3",
     "express": "^4.14.0",
     "method-override": "^2.3.7",
     "mongoose": "^4.7.1"

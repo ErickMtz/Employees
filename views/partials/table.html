@@ -1,0 +1,37 @@
+<div>
+	<div class="tableContainer">
+		<table class="table table-bordered table-hover" id="myTable">
+			<thead> 
+				<tr>
+					<th class="tableHead">employee id</th>
+					<th class="tableHead">name</th>
+					<th class="tableHead">last name</th>
+					<th class="tableHead">rfc</th>
+					<th class="tableHead">gender</th>
+					<th class="tableHead">birthday</th>
+					<th class="tableHead">phone number</th>
+					<th class="tableHead">email</th>
+					<th class="tableHead">employment</th>
+					<th class="tableHead">hire date</th>
+					<th class="tableHead">salary</th>
+				</tr>
+			</thead> 
+			<tbody >
+				<tr ng-repeat="employee in employees" ng-DblClick="doubleClick(employee)" ng-class="{clicked:rowClicked==item}" >
+					<td ng-model="row_employee_id">{{employee.employee_id}}</td>
+					<td>{{employee.name}}</td>
+					<td>{{employee.last_name}}</td>
+					<td>{{employee.rfc}}</td>
+					<td>{{employee.gender}}</td>
+					<td>{{employee.birthday| date : "dd/MM/y"}}</td>
+					<td>{{employee.phone_number}}</td>
+					<td>{{employee.email}}</td>
+					<td>{{employee.employment}}</td>
+					<td>{{employee.hire_date | date : "dd/MM/y"}}</td>
+					<td>{{employee.salary}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
