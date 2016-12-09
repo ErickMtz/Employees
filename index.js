@@ -30,7 +30,6 @@ app.use(express.static(path.join(__dirname, 'node_modules')));
 
 app.use('/public', express.static(__dirname + '/public/'));
 app.use('/angular', express.static(__dirname + '/node_modules/angular/'));
-app.use('/angular-sanitize',express.static(__dirname + '/node_modules/angular-sanitize/'))
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/css/'));
 app.use('/javascripts', express.static(__dirname + '/node_modules/bootstrap/dist/js/'));
 app.use('/views', express.static(__dirname + '/views'));

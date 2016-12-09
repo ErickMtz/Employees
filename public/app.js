@@ -146,7 +146,7 @@
 						$scope.employees = "Something went wrong";
 					});
 				}, function(response) {
-					window.alert("Something went wrong");
+					$scope.FoundedEmployee = "Something went wrong";
 				});
 
 
